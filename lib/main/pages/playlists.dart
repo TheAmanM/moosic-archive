@@ -54,7 +54,7 @@ class Playlists extends StatelessWidget {
         )
       ], */
       backgroundColor: Colors.white,
-      resizeToAvoidBottomPadding: false,
+      // resizeToAvoidBottomPadding: false,
       // mainAxisAlignment: MainAxisAlignment.center,
       // crossAxisAlignment: CrossAxisAlignment.center,
       // mainAxisSize: MainAxisSize.min,

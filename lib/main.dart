@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:moosic/main/constants.dart';
 import 'package:moosic/main/main.dart';
-import 'main/get_started.dart';
+// import 'main/get_started.dart';
 
 void main() {
   runApp(

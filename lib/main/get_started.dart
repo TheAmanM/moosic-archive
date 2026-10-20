@@ -6,7 +6,7 @@ class GetStarted extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      resizeToAvoidBottomPadding: false,
+      // resizeToAvoidBottomPadding: false,
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -24,7 +24,7 @@ class GetStarted extends StatelessWidget {
               smallPadding,
               0,
               Text(
-                "The only MP3 player you'll ever need",
+                "The only music player you'll ever need",
                 style: headline2,
                 textAlign: TextAlign.center,
               ),

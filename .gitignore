@@ -1,4 +1,34 @@
 # Miscellaneous
+# Archive preparation: secrets and platform build output
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*service*account*.json
+*firebase-adminsdk*.json
+credentials*.json
+secrets.*
+key.properties
+local.properties
+.gradle/
+.cxx/
+Pods/
+DerivedData/
+xcuserdata/
+.symlinks/
+ephemeral/
+build/
+dist/
+out/
+coverage/
+Thumbs.db
+
 *.class
 *.log
 *.pyc

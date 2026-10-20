@@ -114,7 +114,7 @@ class _MainState extends State<Main> {
           ),
         ),
       ), */
-      resizeToAvoidBottomPadding: false,
+      // resizeToAvoidBottomPadding: false,
       backgroundColor: Colors.white,
       body: drawerItems[pageIndex].page ?? Container(),
       drawer: Drawer(

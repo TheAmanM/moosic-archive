@@ -4,6 +4,8 @@ import 'package:flutter/services.dart';
 Color mainColor = new Color(0xFF37137f);
 Color accentColor = new Color(0xFF292D3E);
 
+Color fadedGrey = new Color(0xFFE1E1E1);
+
 double smallPadding = 8;
 double mediumPadding = 16;
 
@@ -90,26 +92,29 @@ Widget roundedButton(Function() onTap, String text, Color color) {
   );
 }
 
-Widget customTextField() {
+Widget customTextField(TextEditingController controller, [IconButton prefixIcon, IconButton suffixIcon]) {
   return TextField(
-    keyboardType: TextInputType.emailAddress,
+    controller: controller,
+    // keyboardType: TextInputType.numberWithOptions(signed: false),
     textCapitalization: TextCapitalization.none,
     cursorColor: mainColor,
     decoration: InputDecoration(
-      labelText: 'Email',
+      labelText: 'Search for a user: ',
       labelStyle: TextStyle(
         color: Colors.black45,
       ),
+      prefixIcon: prefixIcon ?? null,
+      suffixIcon: suffixIcon ?? null,
       enabledBorder: OutlineInputBorder(
-        // borderSide: BorderSide(color: mainColor),
+        borderSide: BorderSide(color: mainColor),
         borderRadius: BorderRadius.circular(
-          1000,
+          5,
         ),
       ),
       focusedBorder: OutlineInputBorder(
-        // borderSide: BorderSide(color: mainColor),
+        borderSide: BorderSide(color: mainColor),
         borderRadius: BorderRadius.circular(
-          1000,
+          5,
         ),
       ),
     ),
